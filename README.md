@@ -40,7 +40,7 @@ function getHealthFromAob() {
      if(healthAobLength <= 0) {
           // engine.showMsg = MessageBox.Show with params as strings
           engine.showMsg('Unable to find the health value in memory.', 'Could not find health value');
-          // Stop script
+
           engine.stopScript();
           return;
      }
