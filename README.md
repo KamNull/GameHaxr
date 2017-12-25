@@ -70,5 +70,6 @@ async function loop() {
 ```
 
 # More Information
+[WebGameHaxr Wiki](https://github.com/KamNull/WebGameHaxr/wiki)
 [Cheat Engine Lua](http://wiki.cheatengine.org/index.php?title=Lua)  
 [AutoHotKey](https://autohotkey.com/docs/AutoHotkey.htm)
