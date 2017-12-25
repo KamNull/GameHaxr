@@ -39,7 +39,7 @@ function getHealthFromAob() {
      
      if(healthAobLength <= 0) {
           // engine.showMsg = MessageBox.Show with params as strings
-          engine.showMsg('Unable to find the health value in memory. Please check everything and try again.', 'Could not find health value');
+          engine.showMsg('Unable to find the health value in memory.', 'Could not find health value');
           // Stop script
           engine.stopScript();
           return;
@@ -54,7 +54,6 @@ async function loop() {
      // Only refill if 50 HP
      if(lua.bool('readFloat(healthAddr) <= 50')) {
      
-          // write[Type] returns 1 (true) if success
           // use 'return' in lua.execute for returning value to JS
           let healthWrite = lua.execute('return writeFloat(healthAddr, 100)');
           
@@ -64,9 +63,12 @@ async function loop() {
           
      }
      
-     // Wait 100 MS before checking again
      await sleep(100);
      loop();
 }
 
 ```
+
+# More Information
+[Cheat Engine Lua](http://wiki.cheatengine.org/index.php?title=Lua)
+[AutoHotKey](https://autohotkey.com/docs/AutoHotkey.htm)
