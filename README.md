@@ -70,5 +70,5 @@ async function loop() {
 ```
 
 # More Information
-[Cheat Engine Lua](http://wiki.cheatengine.org/index.php?title=Lua)
+[Cheat Engine Lua](http://wiki.cheatengine.org/index.php?title=Lua)  
 [AutoHotKey](https://autohotkey.com/docs/AutoHotkey.htm)
