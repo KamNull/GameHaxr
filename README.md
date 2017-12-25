@@ -18,14 +18,55 @@ Currently, you get 3 major classes from WebGameHaxr to use in JavaScript:
 # Usage & Examples
 To use WebGameHaxr, and hacks developed with it, you need to download it.  
 (Not out yet, still in major development)
-```js
+
+For a quick execution and look over available functions and properties, you can use the Developer Tool's Console.
+```javascript
 // init is automatically ran when loaded
-async function init() {
+function init() {
      // "Server" environment name. Must be unique to avoid conflicts.
      // Should be the first thing set
-     engine.serverName = 'WebGameHaxr_Example';
+     engine.serverName = 'WebGameHaxr_Example_InfHealth';
      
-     // Initalize everything needed here
+     // Initalize everything needed
      // ...
+     
+     getHealthFromAob();
 }
+
+function getHealthFromAob() {
+     // Returns amount of results found, and puts them in the Lua variable 'healthAob'
+     let healthAobLength = lua.scanAob('healthAob', '00 00 00');
+     
+     if(healthAobLength <= 0) {
+          // engine.showMsg = MessageBox.Show with params as strings
+          engine.showMsg('Unable to find the health value in memory. Please check everything and try again.', 'Could not find health value');
+          // Stop script
+          engine.stopScript();
+          return;
+     }
+     // Store first result in healthAddr
+     lua.execute('healthAddr = healthAob[0]');
+     
+     loop();
+}
+
+async function loop() {
+     // Only refill if 50 HP
+     if(lua.bool('readFloat(healthAddr) <= 50')) {
+     
+          // write[Type] returns 1 (true) if success
+          // use 'return' in lua.execute for returning value to JS
+          let healthWrite = lua.execute('return writeFloat(healthAddr, 100)');
+          
+          if(healthWrite != 1) 
+               console.error('An error occured when trying to write to health value.');
+          }
+          
+     }
+     
+     // Wait 100 MS before checking again
+     await sleep(100);
+     loop();
+}
+
 ```
