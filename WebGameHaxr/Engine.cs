@@ -169,8 +169,22 @@ namespace WebGameHaxr
         #endregion
         
         
-        #region Browser specific
-        // [Source]
+        #region Browser specific | [Source]
+        public string TitleText
+        {
+            get { return browserHolder.Text; }
+            set
+            {
+                try
+                {
+                    Action action = () => browserHolder.Text = value + " | WebGameHaxr";
+                    browserHolder.BeginInvoke(action);
+
+                }
+                catch (Exception ex) { ConsoleError(ex); }
+            }
+        }
+        
         public void ScreenshotBrowser(string filename = "BrowserScreenshot.png")
         {
             Bitmap bitmap = ControlSnapshot.Snapshot(GlobalVar.Browser);
