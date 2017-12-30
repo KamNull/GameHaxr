@@ -12,9 +12,9 @@ namespace WebGameHaxr
             ahk.ExecRaw(ahkCode);
         }
 
-        public void SetVar(string varName, string value)
+        public void SetVar(string varName, string varValue)
         {
-            ahk.SetVar(varName, value);
+            ahk.SetVar(varName, varValue);
         }
         public string GetVar(string varName)
         {
