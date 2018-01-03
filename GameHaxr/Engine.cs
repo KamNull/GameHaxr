@@ -6,7 +6,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.IO;
 
-namespace WebGameHaxr
+namespace GameHaxr
 {
     public class Engine
     {
