@@ -1,6 +1,6 @@
 using AutoHotkey.Interop;
 
-namespace WebGameHaxr
+namespace GameHaxr
 {
     // [Source]
     class AHK
