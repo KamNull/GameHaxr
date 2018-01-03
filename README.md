@@ -1,22 +1,23 @@
-NOTE: This does not contain major source code, as it is intended just for [documentation](https://github.com/KamNull/WebGameHaxr/wiki) and learning how to use WebGameHaxr in JavaScript etc.
+NOTE: This does not contain major source code, as it is intended just for [documentation](https://github.com/KamNull/GameHaxr/wiki) and learning how to use GameHaxr in JavaScript etc.
 
-# WebGameHaxr
-A memory-based and automation hacking "engine" specifically optimized for browser games, allowing you to easily make your own scripts with UIs using JavaScript and HTML by exposing the WebGameHaxr C# .NET classes directly to the browser.
+# GameHaxr
+A memory-based and automation hacking "engine", allowing you to easily make your own hack or macro scripts with UIs using JavaScript and HTML by exposing the GameHaxr C# .NET classes directly to the browser.
 
-The easy way to make advanced hacks and trainers (UIs) for your favorite browser games.  
+The easy way to make advanced hacks and trainers (UIs) for your favorite desktop or browser games.  
 Thanks to Cheat Engine's Lua and AutoHotKey, you can also integrate Lua and AutoHotKey into your Javascript, or even code just with them, for more advanced usage.
 
 # Interfaces For Your Hacks
 You can use a regular HTML document with any framework, such as Bootstrap, to make beautiful interfaces for your hack.
 
-# What WebGameHaxr Exposes To JavaScript
-Currently, you get 3 major classes from WebGameHaxr to use in JavaScript:
-- `engine` | The core class for important variables and functions, including browser-specific ones.
-- `lua`    | Access to Cheat Engine Lua. Premade Lua functions and properties for JavaScript, raw Lua execution etc.
-- `ahk`    | Access to AutoHotKey. Premade AutoHotKey functions and properties for JavaScript, raw AutoHotKey execution etc.
+# What GameHaxr Exposes To JavaScript
+Currently, you get 4 major classes from GameHaxr to use in JavaScript:
+- `engine`  | The core class for important variables and functions.
+- `lua`     | Access to Cheat Engine Lua. Premade Lua functions and properties for JavaScript, raw Lua execution etc.
+- `ahk`     | Access to AutoHotKey. Premade AutoHotKey functions and properties for JavaScript, raw AutoHotKey execution etc.
+- `browser` | Useful for hacking browser games. Direct key and mouse input to browser, screenshot browser etc.
 
 # Usage & Examples
-To use WebGameHaxr, and hacks developed with it, you need to download it.  
+To use GameHaxr, and hacks developed with it, you need to download it.  
 (Not out yet, still in major development)
 
 For a quick execution and look over available functions and properties, you can use the Developer Tool's Console.
@@ -25,7 +26,7 @@ For a quick execution and look over available functions and properties, you can 
 function init() {
      // "Server" environment name. Must be unique to avoid conflicts.
      // Should be the first thing set
-     engine.serverName = 'WebGameHaxr_Example_InfHealth';
+     engine.serverName = 'GameHaxr_Example_InfHealth';
      
      // Initalize everything needed
      // ...
@@ -70,6 +71,6 @@ async function loop() {
 ```
 
 # More Information
-[WebGameHaxr Wiki](https://github.com/KamNull/WebGameHaxr/wiki)  
+[GameHaxr Wiki](https://github.com/KamNull/GameHaxr/wiki)  
 [Cheat Engine Lua](http://wiki.cheatengine.org/index.php?title=Lua)  
 [AutoHotKey](https://autohotkey.com/docs/AutoHotkey.htm)
