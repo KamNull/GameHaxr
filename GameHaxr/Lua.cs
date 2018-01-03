@@ -1,6 +1,6 @@
 using System;
 
-namespace WebGameHaxr
+namespace GameHaxr
 {
     // [Source]
     class Lua
