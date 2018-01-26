@@ -100,73 +100,7 @@ namespace GameHaxr
         #endregion
         
         #endregion
-        
-        
-        #region File IO | [Source]
-        private string ScriptPath(string path)
-        {
-            return Path.Combine(ScriptDir, path);
-        }
-
-        public string FileReadText(string path)
-        {
-            try
-            {
-                return File.ReadAllText(ScriptPath(path));
-            }
-            catch (Exception ex)
-            {
-                ConsoleError(ex);
-                return null;
-            } 
-        }
-        public byte[] FileReadBytes(string path)
-        {
-            try
-            {
-                return File.ReadAllBytes(ScriptPath(path));
-            }
-            catch (Exception ex)
-            {
-                ConsoleError(ex);
-                return null;
-            }
-        }
-
-        public void FileWriteText(string path, string contents)
-        {
-            try
-            {
-                File.WriteAllText(ScriptPath(path), contents);
-            }
-            catch (Exception ex)
-            {
-                ConsoleError(ex);
-            }
-        }
-        public void FileAppendText(string path, string contents)
-        {
-            try
-            {
-                File.AppendAllText(ScriptPath(path), contents);
-            }
-            catch (Exception ex)
-            {
-                ConsoleError(ex);
-            }
-        }
-        public void FileWriteBytes(string path, byte[] bytes)
-        {
-            try
-            {
-                File.WriteAllBytes(ScriptPath(path), bytes);
-            }
-            catch (Exception ex)
-            {
-                ConsoleError(ex);
-            }
-        }
-        #endregion
+            
         
         // Change top-bar text on window
         public string TitleText
