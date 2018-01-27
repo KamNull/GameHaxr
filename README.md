@@ -1,6 +1,8 @@
 NOTE: This does not contain major source code, as it is intended just for [documentation](https://github.com/KamNull/GameHaxr/wiki) and learning how to use GameHaxr in JavaScript etc.
 
 # GameHaxr
+[Visit Offical Website](http://gamehaxr.rf.gd)
+
 A memory-based and automation hacking "engine", allowing you to easily make your own hack or macro scripts with UIs using JavaScript and HTML by exposing the GameHaxr C# .NET classes directly to the browser.
 
 The easy way to make advanced hacks and trainers (UIs) for your favorite desktop or browser games.  
