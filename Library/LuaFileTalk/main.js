@@ -8,9 +8,13 @@ class LuaFileTalk {
         lua.execute(engineIO.fileReadText(this.mainDir + 'main.lua'));
     }
 
-    eval(luaCode) {
+    execute(luaCode) {
         lua.execute('returnValue([[ ' + luaCode + ' ]])')
         return engineIO.fileReadText(this.fileDir + 'result.txt');
+    }
+
+    getVar(luaVar) {
+        return this.execute('return ' + luaVar);
     }
 
 }
