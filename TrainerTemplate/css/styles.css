@@ -1,0 +1,90 @@
+body {
+    background-color: #22252a !important;
+    color: #cfd2da !important;
+}
+
+.title {
+    background-color: rgb(29, 32, 37) !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px #000000 !important;
+}
+
+.icon1 {
+    font-size: 20px !important;
+}
+
+li {
+    color: #cfd2da;
+}
+
+.btn {
+    margin-right: 7px;
+}
+
+code {
+    color: #cbcbcb !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+
+hr {
+    background-color: rgb(107, 110, 118);
+}
+
+hr.style1{
+	border-top: 1px solid #8c8b8b !important;
+}
+
+
+.box-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.modal-content {
+    background-color:rgb(29, 32, 37) !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e5e5e56e !important;
+}
+
+.modal-footer {
+    border-top: 1px solid #e5e5e56e !important;
+}
+
+a.nav-link,
+a:visited.nav-link {
+    color: rgb(210, 210, 210) !important;
+}
+
+a:hover.nav-link,
+a:active.nav-link {
+    color: #ffff !important;
+}
+
+nav.navbar li.active a {
+    color: #ffff !important;
+}
+
+
+a.color-white,
+a:visited.nav-link {
+    color: rgb(210, 210, 210) !important;
+}
+
+a:hover.color-white,
+a:active.nav-link {
+    color: #ffff !important;
+}
+
+.dropdown-menu a:hover {
+    color: #fff;
+    background-color: rgb(24, 27, 32);
+    border-color: #fff;
+}
