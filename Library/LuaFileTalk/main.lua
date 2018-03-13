@@ -1,4 +1,4 @@
--- START OF INSPECT CLASS
+-- START OF INSPECT LIBRARY
 local inspect ={
     _VERSION = 'inspect.lua 3.1.0',
     _URL     = 'http://github.com/kikito/inspect.lua',
@@ -339,9 +339,9 @@ local inspect ={
   end
   
   setmetatable(inspect, { __call = function(_, ...) return inspect.inspect(...) end })
--- END OF INSPECT CLASS
+-- END OF INSPECT LIBRARY
 
--- START OF HELPER CLASS
+-- START OF HELPER FUNCTIONS
 function writeResult(result)
    fileResult = io.open(luaServerPath .. "\\result.txt", "w")
    fileResult:write(inspect(result))
@@ -351,6 +351,7 @@ function writeJS(js)
    fileJS = io.open(luaServerPath .. "\\javascript.txt", "w")
    fileJS:write(js)
    fileJS:close()
+   requestedJS = true;
 end
 
 function returnValue(code)
@@ -363,4 +364,4 @@ function returnValue(code)
     writeResult("ERROR:" .. err)
   end
 end
--- END OF HELPER CLASS
+-- END OF HELPER FUNCTIONS
