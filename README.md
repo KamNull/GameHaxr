@@ -1,4 +1,7 @@
-NOTE: This does not contain major source code, as it is intended just for [documentation](https://github.com/KamNull/GameHaxr/wiki) and learning how to use GameHaxr in JavaScript etc.
+# I have discontinued using this repository for now. It may be continued in the future. Please do not refer to this, it is not being updated and is already outdated.
+See the new and updated documentation [here](http://gamehaxr.rf.gd/docs/).
+
+***
 
 ## GameHaxr
 [Visit Official Website](http://gamehaxr.rf.gd)
